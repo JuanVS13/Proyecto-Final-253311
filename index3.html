@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <header>
+        <h1>PORTAFOLIO DE PROYECTOS</h1>
+    </header>
+
+    <nav>
+        <p>Bienvenido a la Página!</p>
+        <a href="index.html">Cerrar sesión</a>
+    </nav>
+
+    <section class="panel panel-agregar">
+        <h2>AGREGAR PROYECTO</h2>
+
+        <div id="formAgregar" class="form-oculto">
+            <h3>Nuevo Proyecto</h3>
+
+            <input id="title" placeholder="Título">
+            <input id="description" placeholder="Descripción">
+            <input id="technologies" placeholder="Tecnologías (separadas por coma)">
+            <input id="repository" placeholder="URL del repositorio">
+            <input id="image" placeholder="URL de la imagen del proyecto">
+
+            <button id="btnAgregar">Agregar proyecto</button>
+        </div>
+    </section>
+
+    <section class="panel lista-proyectos">
+        <h2>PROYECTOS REGISTRADOS</h2>
+
+        <div id="listaProyectos" class="grid-proyectos">
+
+            <div class="tarjeta">
+                <h3>Nombre del Proyecto</h3>
+                <p><strong>Descripción:</strong> Descripción del proyecto</p>
+                <p><strong>Tecnologías:</strong> Tecnologías del proyecto</p>
+                <a href="#" class="repo">Ver repositorio</a>
+                <img class="img-proyecto" src="" alt="Imagen del proyecto">
+
+                <div class="opciones">
+                    <button class="btnEditar">Actualizar</button>
+                    <button class="btnEliminar">Eliminar</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./function.js"></script>
+</body>
+</html>

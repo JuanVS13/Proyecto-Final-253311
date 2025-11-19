@@ -1,0 +1,304 @@
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ff786c;
+    border: 3px solid #ffffff;
+    padding: 20px;
+}
+
+body {
+    background-color: #ffc793dc;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa16eae;
+    padding: 15px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin: 10px 300px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    color: #ff3e3e;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    -webkit-text-stroke: 0.5px white;
+}
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    background-color: #ff6363;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    margin: 10px;
+}
+
+
+/*Estilos para los proyetos en el Home*/
+.panel {
+    background-color: #ffb49a;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.panel-agregar {
+    width: 57%;
+}
+
+.panel-agregar #formAgregar {
+    width: 80%;
+    margin: auto;
+}
+
+.panel-agregar .form-oculto input {
+    width: 100%;
+}
+
+.panel-agregar #btnAgregar {
+    display: block;
+    width: 40%;
+    margin: 20px auto 0 auto;
+}
+
+.panel h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(201, 128, 50);
+    text-shadow: 2px 2px 1px black;
+}
+
+h3{
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px black;
+    margin: 10px;
+}
+
+#btnAgregar {
+    background-color: #ff6f4f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-oculto input {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 20%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffbaba;
+}
+
+.lista-proyectos h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #ff8f7a;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 245px;
+    height: auto;
+}
+
+.tarjeta h3 {
+    font-size: 25px;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(255, 68, 68);
+}
+
+.tarjeta p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.repo {
+    background-color: #ff6f4f;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.repo:hover{
+    text-decoration: underline;
+}
+
+.img-proyecto {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+    border: 2px solid white;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btnEditar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffae68;
+    color: rgb(255, 255, 255);
+    padding: 7px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnEliminar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ff3e3e;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px){
+
+    header {
+        font-size: 12px;
+        padding: 10px;  
+    }
+
+    nav {
+        flex-direction: flex;
+        margin: 10px auto;
+        width: 70%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: 13px;
+        margin: 5px;
+        padding: 7px;
+    }
+
+    .panel h2 {
+        font-size: 30px;
+    }
+
+    .form-oculto h3{
+        font-size: 22px;
+    }
+
+    .panel-agregar {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .panel-agregar .form-oculto input {
+        width: 85%;
+        font-size: 13px;
+    }
+
+    #btnAgregar {
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .lista-proyectos {
+        width: 85%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .lista-proyectos h2 {
+        font-size: 30px;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tarjeta {
+        height: auto;
+        padding: 10px;
+    }
+
+    .tarjeta h3 {
+        font-size: 20px;
+    }
+
+    .tarjeta p {
+        font-size: 15px;
+    }
+
+    .img-proyecto {
+        height: 130px;
+    }
+
+    .opciones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btnEditar,.btnEliminar {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+}
